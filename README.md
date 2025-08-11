@@ -1,5 +1,7 @@
 # imt2200_actividad1
-Edite este archivo agregando información útil para quien lo revise."/n"
+Edite este archivo agregando información útil para quien lo revise.
+
 archivo sobre la poblacion 
+
 
 
