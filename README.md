@@ -1,5 +1,6 @@
 # IMT2200 - Introducción a la Ciencia de Datos :house:
 Nombre: Constanza Belén Alarcón Medina
+rut: 21667709-9
 
 :octocat: Repositorio en GitHub del Curso – Segundo Semestre 2025  
 **Profesor:** Rodrigo A. Carrasco ([rcarrass@uc.cl](mailto:rcarrass@uc.cl))
