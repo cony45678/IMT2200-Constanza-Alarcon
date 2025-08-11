@@ -2,6 +2,8 @@
 Edite este archivo agregando información útil para quien lo revise.
 
 archivo sobre la poblacion 
+info del censo de la región metropolitana de 2017
+
 
 
 
