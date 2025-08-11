@@ -1,2 +1,2 @@
-# IMT2200-Constanza-Alarcon
-actividad 01 de IMT2200
+# imt2200_actividad1
+Edite este archivo agregando información útil para quien lo revise.
