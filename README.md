@@ -1,5 +1,6 @@
 # IMT2200 - Introducción a la Ciencia de Datos :house:
-
+nombre: Constanza Alarcon
+rut 21667709-9
 :octocat: Repositorio en GitHub del Curso – Segundo Semestre 2025  
 **Profesor:** Rodrigo A. Carrasco ([rcarrass@uc.cl](mailto:rcarrass@uc.cl))
 
@@ -84,3 +85,4 @@ Puedes reutilizar y adaptar el material con la debida atribución.
 ---
 
 ¡Bienvenidos al curso! :rocket:
+
