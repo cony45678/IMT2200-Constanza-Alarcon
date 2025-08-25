@@ -340,7 +340,7 @@ rango_por_curso_df.columns = ['curso', 'rango_nota']
 | B     | 0.8           |
 ```
 
-**Ejemplo Solo de `aply`**
+##  Extra: Ejemplo Solo de `aply`
 
 ```python
 def redondear_columna(col):
@@ -371,3 +371,54 @@ datos_redondeados
 | B     | 2023 | 7    |
 | B     | 2024 | 6    |
 ```
+
+## Extra: ``explode``
+
+La función `explode` en pandas permite transformar una columna que contiene listas o arreglos en varias filas, expandiendo cada elemento de la lista en una fila separada. Es útil cuando tienes datos anidados y quieres "desempaquetarlos" para analizarlos más fácilmente.
+
+**Sintaxis básica:**
+```python
+df.explode('columna')
+```
+- `'columna'`: nombre de la columna que contiene listas o arreglos.
+
+**Ejemplo:**
+
+Supón que tienes un DataFrame donde cada estudiante puede tener varias materias inscritas:
+
+```python
+import pandas as pd
+
+datos = pd.DataFrame({
+    'id': [1, 2, 3],
+    'nombre': ['Ana', 'Luis', 'Sofía'],
+    'materias': [['Matemáticas', 'Historia'], ['Física'], ['Química', 'Arte', 'Música']]
+})
+
+datos
+```
+**Resultado original:**
+| id | nombre | materias                      |
+|----|--------|------------------------------|
+| 1  | Ana    | ['Matemáticas', 'Historia']  |
+| 2  | Luis   | ['Física']                   |
+| 3  | Sofía  | ['Química', 'Arte', 'Música']|
+
+Ahora aplicamos `explode` sobre la columna `materias`:
+
+```python
+datos_exploded = datos.explode('materias')
+datos_exploded
+```
+
+**Resultado después de explode:**
+| id | nombre | materias    |
+|----|--------|-------------|
+| 1  | Ana    | Matemáticas |
+| 1  | Ana    | Historia    |
+| 2  | Luis   | Física      |
+| 3  | Sofía  | Química     |
+| 3  | Sofía  | Arte        |
+| 3  | Sofía  | Música      |
+
+Cada materia ahora aparece en una fila separada, facilitando el análisis por materia.
