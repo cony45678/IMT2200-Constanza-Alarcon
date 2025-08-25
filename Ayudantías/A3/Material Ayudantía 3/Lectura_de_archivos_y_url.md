@@ -150,7 +150,6 @@ Y aplicándolo se verá así
 | id | name | address.city | address.zip |
 |----|------|--------------|-------------|
 | 1  | Juan | Santiago     | 12345       |
-| 2  | Ana  | Valparaíso   | 54321       |
 ```
 
 

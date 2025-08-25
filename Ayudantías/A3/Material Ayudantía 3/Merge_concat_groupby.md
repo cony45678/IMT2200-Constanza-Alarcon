@@ -339,3 +339,35 @@ rango_por_curso_df.columns = ['curso', 'rango_nota']
 | A     | 0.7           |
 | B     | 0.8           |
 ```
+
+**Ejemplo Solo de `aply`**
+
+```python
+def redondear_columna(col):
+    return round(col)
+
+notas_redondeadas = datos['nota'].apply(redondear_columna)
+notas_redondeadas
+
+**Resultado**
+
+|6|
+|6|
+|7|
+|6|
+```
+Ahora creamos un nuevo datafrmame con esa columna
+```python
+datos_redondeados = datos.copy()  # Hacemos una copia del DataFrame original
+datos_redondeados['nota'] = notas_redondeadas  # Asignamos las notas redondeadas a la columna 'nota'
+datos_redondeados
+
+**Resultado de datos_redondeados:**
+
+| curso | año  | nota |
+|-------|------|------|
+| A     | 2023 | 6    |
+| A     | 2023 | 6    |
+| B     | 2023 | 7    |
+| B     | 2024 | 6    |
+```
