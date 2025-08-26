@@ -1,0 +1,5 @@
+ruta = os.path.join("tareas", "tarea 01", "archive", "bga_GameItem.csv")
+path_relativo = ruta
+lectura = pd.read_csv(path_relativo)
+datos_juegos = lectura#.head()
+datos_juegos
